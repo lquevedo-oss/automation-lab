@@ -1,0 +1,124 @@
+{
+  "findings": [
+    {
+      "title": "Nueva función de colaboración ficticia",
+      "source": "https://example.com/vendor-a/news?utm_source=mail",
+      "observed_at": "2026-09-01",
+      "company": "Empresa Demo A"
+    },
+    {
+      "title": "Nueva función de colaboración ficticia",
+      "source": "https://example.com/vendor-a/news",
+      "observed_at": "2026-09-02",
+      "company": "Empresa Demo A"
+    },
+    {
+      "title": "Cambio ficticio de documentación",
+      "source": "https://example.com/vendor-b/docs",
+      "observed_at": "2026-09-01",
+      "company": "Empresa Demo B"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "contact-demo-1",
+      "country": "CL",
+      "downloaded": true
+    },
+    {
+      "id": "contact-demo-2",
+      "country": "CL",
+      "demo_date": "2026-09-01"
+    },
+    {
+      "id": "contact-demo-3",
+      "country": "PE",
+      "downloaded": true
+    }
+  ],
+  "deals": [
+    {
+      "id": "deal-demo-1",
+      "contact_ids": [
+        "contact-demo-1",
+        "contact-demo-2"
+      ],
+      "stage": "won",
+      "amount": "2500"
+    },
+    {
+      "id": "deal-demo-2",
+      "contact_ids": [
+        "contact-demo-3"
+      ],
+      "stage": "lost",
+      "reason": "feature_gap",
+      "amount": "1500"
+    },
+    {
+      "id": "deal-demo-3",
+      "contact_ids": [],
+      "stage": "standby",
+      "reason": "unknown",
+      "amount": "500"
+    }
+  ],
+  "bookings": [
+    {
+      "date": "2026-10-02",
+      "country": "CL"
+    },
+    {
+      "date": "2026-10-02",
+      "country": "CL"
+    }
+  ],
+  "source_rows": [
+    {
+      "id": "record-demo-1",
+      "label": "Ejemplo A"
+    },
+    {
+      "id": "record-demo-2",
+      "label": "Ejemplo B"
+    }
+  ],
+  "target_rows": [
+    {
+      "id": "record-demo-1",
+      "label": "Ejemplo A"
+    },
+    {
+      "id": "record-demo-2",
+      "label": "Ejemplo B revisado"
+    }
+  ],
+  "document_before": {
+    "title": "Ficha Demo",
+    "summary": "Contenido inicial",
+    "feature": "Función ficticia"
+  },
+  "document_after": {
+    "title": "Ficha Demo",
+    "summary": "Contenido revisado",
+    "feature": "Función ficticia"
+  },
+  "clients": [
+    {
+      "name": "Empresa Demo A",
+      "size_demo": 100,
+      "features": [
+        "Colaboración",
+        "Analítica"
+      ]
+    },
+    {
+      "name": "Empresa Demo B",
+      "size_demo": 50,
+      "features": [
+        "Automatización",
+        "Colaboración"
+      ]
+    }
+  ]
+}

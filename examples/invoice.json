@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "needs_review",
+  "applied_to_inventory": false,
+  "document": {
+    "type": "invoice",
+    "supplier": "Proveedor Ficticio",
+    "folio": "DEMO-001",
+    "issue_date": "2026-09-01",
+    "source_images": [
+      "synthetic-example-only"
+    ],
+    "invoice_total_clp": 1200,
+    "quantity_rule": "Unidades ficticias"
+  },
+  "lines": [
+    {
+      "line_number": 1,
+      "supplier_code": "DEMO-SKU-01",
+      "invoice_description": "Producto Ficticio",
+      "quantity_source": "12 unidades de muestra",
+      "quantity_units": 12,
+      "invoice_line_total_clp": 1200,
+      "stock_delta_units": 12,
+      "inventory_match": {
+        "name": "Producto Ficticio",
+        "barcode": "DEMO-001",
+        "format": "unit",
+        "current_stock": 5,
+        "simulated_stock_after_receipt": 17,
+        "confidence": "high",
+        "evidence": "Fixture sintético"
+      },
+      "ambiguities": []
+    }
+  ],
+  "checks": {
+    "total_quantity_units": 12,
+    "sum_of_line_totals_clp": 1200
+  }
+}
